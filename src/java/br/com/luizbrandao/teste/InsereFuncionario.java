@@ -8,7 +8,8 @@ import br.com.luizbrandao.modelo.Funcionario;
 
 
 public class InsereFuncionario {
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args){
+            try{
 		Scanner teclado = new Scanner(System.in);
 		
 		Funcionario contato = new Funcionario();
@@ -23,5 +24,8 @@ public class InsereFuncionario {
 		dao.adiciona(contato);
 		
 		System.out.println("Gravado!");
+            }catch(SQLException e){
+                throw new RuntimeException(e.getMessage());
+            }
 	}
 }

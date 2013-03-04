@@ -40,7 +40,7 @@ public class FuncionarioDAO {
 			Funcionario func = new Funcionario();
 			func.setNome(rs.getString("nome"));
 			func.setSenha(rs.getString("senha"));
-			func.add(func);
+			funcionario.add(func);
 		}
 		rs.close();
 		stmt.close();
