@@ -9,7 +9,7 @@ public class ConnectionFactory {
     public static Connection getConnection() throws SQLException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "root", "l0g4n8899$");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "root", "");
         } catch (ClassNotFoundException e) {
             throw new SQLException(e.getMessage());
         }

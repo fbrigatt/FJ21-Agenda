@@ -1,0 +1,14 @@
+SMAP
+campoData_tag.java
+JSP
+*S JSP
+*F
++ 0 campoData.tag
+WEB-INF/tags/campoData.tag
+*L
+1:58
+2:59,5
+3:64
+4:65,3
+5:68
+*E
